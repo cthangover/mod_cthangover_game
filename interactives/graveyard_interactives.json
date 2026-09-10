@@ -1,0 +1,28 @@
+{
+  "Items": [
+    {
+      "id": "crypt_spot",
+      "layer": "foreground",
+      "zIndex": 5,
+      "enabled": true,
+      "visible": true,
+      "cursor": "PointingHand",
+      "hitArea": { "type": "rect", "x": 0.55, "y": 0.35, "width": 0.22, "height": 0.45 },
+      "actions": {
+        "onClick": { "scenario": "scenarios/prolog/graveyard_read.scenario" }
+      }
+    },
+    {
+      "id": "book_wipe",
+      "layer": "foreground",
+      "zIndex": 6,
+      "enabled": true,
+      "visible": true,
+      "cursor": "PointingHand",
+      "hitArea": { "type": "rect", "x": 0.30, "y": 0.62, "width": 0.12, "height": 0.12 },
+      "actions": {
+        "onClick": { "scenario": "scenarios/prolog/graveyard_azif.scenario" }
+      }
+    }
+  ]
+}

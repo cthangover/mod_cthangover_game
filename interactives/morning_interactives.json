@@ -1,0 +1,39 @@
+{
+  "Items": [
+    {
+      "id": "cloak_ground",
+      "texture": "cloak_ground",
+      "layer": "foreground",
+      "zIndex": 5,
+      "enabled": true,
+      "visible": true,
+      "cursor": "PointingHand",
+	  "hitArea": {
+        "type": "rect",
+        "x": 0.27239782,
+        "y": 0.7092288,
+        "width": 0.06675094,
+        "height": 0.17319852,
+        "radius": 0.05
+      },
+      "highlight": { "color": "#FFD70044", "scale": 1, "duration": 0.12 },
+      "actions": {
+        "onClick": { "scenario": "scenarios/prolog/morning_cloak.scenario" }
+      }
+    },
+    {
+      "id": "book_ground",
+      "texture": "book_ground",
+      "layer": "foreground",
+      "zIndex": 6,
+      "enabled": true,
+      "visible": true,
+      "cursor": "PointingHand",
+      "hitArea": { "type": "rect", "x": 0.30, "y": 0.66, "width": 0.10, "height": 0.09 },
+      "highlight": { "color": "#9966FF44", "scale": 1, "duration": 0.12 },
+      "actions": {
+        "onClick": { "scenario": "scenarios/prolog/morning_book.scenario" }
+      }
+    }
+  ]
+}

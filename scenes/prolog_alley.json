@@ -1,0 +1,6 @@
+{
+  "name": "prolog_alley",
+  "defaultBackground": "prolog/start_lane",
+  "defaultAmbient": "",
+  "defaultScenario": "scenarios/prolog/morning_wake.scenario"
+}

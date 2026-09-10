@@ -1,0 +1,36 @@
+{
+  "Scene": "default",
+  "Musics": [
+    {
+      "MusicType": "Ambient",
+      "MusicNames": [
+        "Abyssal Void",
+        "Airborne Melody",
+        "Binary Prelude",
+        "Cinders of Dawn",
+        "Melancholic Journey",
+        "Nebula Pulse Echoes",
+        "Quantum Archive",
+        "Twilight Interlude"
+      ]
+    },
+    {
+      "MusicType": "Combat",
+      "MusicNames": [
+        "Aura of Decay",
+        "Circuit Dreams II",
+        "Crimson Echoes",
+        "Crimson Horizon",
+        "Glass Symphony",
+        "Hex Doom Cart",
+        "Iron Resonance",
+        "Iron Resonance II",
+        "Luminous Twilight",
+        "Rusty Frequencies",
+        "Skull Resonance",
+        "Venom's Embrace",
+		"Empty Save Room"
+      ]
+    }
+  ]
+}

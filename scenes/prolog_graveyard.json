@@ -1,0 +1,6 @@
+{
+  "name": "prolog_graveyard",
+  "defaultBackground": "prolog/00025-165590409",
+  "defaultAmbient": "",
+  "defaultScenario": "scenarios/prolog/graveyard_arrival.scenario"
+}

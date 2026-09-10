@@ -1,0 +1,8 @@
+scene: prolog_graveyard
+priority: 15
+condition: NakedMorningQuest.notHasTag("graveyard_read")
+---
+# Книга ещё не прочитана вслух: держим хотспот «за склепом» на сцене.
+# Идемпотентно при каждом входе (Add по тому же id возвращает существующий объект).
+interactive_add crypt_spot
+end
