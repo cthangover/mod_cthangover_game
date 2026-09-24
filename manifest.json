@@ -6,5 +6,55 @@
   "description": "Game core",
   "sources": [
     "src/*.cs"
+  ],
+  "ui": [
+    {
+      "id": "map",
+      "kind": "panel",
+      "slot": "ModBeforeUIPanel",
+      "scene_path": "scenes/ui/map_widget.tscn",
+      "button": { "icon": "map", "locale": "ui/map/title", "index": 10 },
+      "priority": 10
+    },
+    {
+      "id": "inventory",
+      "kind": "panel",
+      "slot": "ModBeforeUIPanel",
+      "scene_path": "scenes/ui/inventory_panel.tscn",
+      "button": { "icon": "bag", "locale": "ui/inventory/title", "index": 20 },
+      "priority": 10
+    },
+    {
+      "id": "characters",
+      "kind": "panel",
+      "slot": "ModBeforeUIPanel",
+      "scene_path": "scenes/ui/character_panel/character_panel.tscn",
+      "button": { "icon": "cards", "locale": "ui/character_panel/title", "index": 30 },
+      "priority": 10
+    },
+    {
+      "id": "skills",
+      "kind": "panel",
+      "slot": "ModBeforeUIPanel",
+      "scene_path": "scenes/ui/skills_panel/skills_panel.tscn",
+      "button": { "icon": "skills", "locale": "ui/skills/title", "index": 40 },
+      "priority": 10
+    },
+    {
+      "id": "game_menu",
+      "kind": "panel",
+      "slot": "ModBeforeUIPanel",
+      "scene_path": "scenes/menu/game_menu.tscn",
+      "button": { "icon": "settings", "locale": "menu/settings", "index": 50 },
+      "priority": 10
+    },
+    {
+      "id": "journal",
+      "kind": "panel",
+      "slot": "ModBeforeUIPanel",
+      "scene_path": "scenes/ui/quest_journal.tscn",
+      "button": { "icon": "journal", "locale": "ui/journal/title", "index": 60 },
+      "priority": 10
+    }
   ]
 }

@@ -1,3 +1,4 @@
+using Cthangover.Core.Events;
 using Cthangover.Core.Mods;
 using Cthangover.Core.Settings;
 
@@ -28,6 +29,8 @@ namespace Cthangover.Core.Characters
     /// </summary>
     public class StarterPartyInitializer : IModInitializer
     {
+        private static bool newGameHookInstalled;
+
         /// <summary>
         /// No-op: cross-mod lifecycle notifications are not needed for
         /// starter party setup. Each mod's <c>OnModResourcesReady</c>
@@ -40,9 +43,23 @@ namespace Cthangover.Core.Characters
         /// to both <c>Characters</c> and <c>BattleSet</c> via
         /// <c>CharacterData.AddCharacterToParty</c>. Called once, after
         /// all mod file providers and JSON resources are guaranteed to
-        /// be accessible.
+        /// be accessible. Also installs the one-time
+        /// <see cref="NewGameStartedEvent"/> hook so the starter party is
+        /// restored after <c>ResetRuntime</c> wipes it at the start of a
+        /// new game. Both operations are idempotent.
         /// </summary>
         public void OnModResourcesReady()
+        {
+            SeedStarterParty();
+
+            if (newGameHookInstalled)
+                return;
+
+            newGameHookInstalled = true;
+            ModEventBus.Subscribe<NewGameStartedEvent>(_ => SeedStarterParty());
+        }
+
+        private static void SeedStarterParty()
         {
             GameData.Instance.Runtime.CharacterData.AddCharacterToParty("Marao");
             GameData.Instance.Runtime.SkillData.AddSkill("slave_master");
