@@ -1,6 +1,6 @@
 scene: prolog_alley
 priority: 15
-condition: NakedMorningQuest.notHasTag("cloak_taken") && NakedMorningQuest.notHasTag("book_taken")
+condition: AwakeningQuest.notHasTag("cloak_taken") && AwakeningQuest.notHasTag("book_taken")
 ---
 # Ни один предмет ещё не взят: держим оба интерактива на сцене.
 # Не is_one_run — идемпотентно пересоздаёт объекты при каждом входе (Add по тому же id возвращает существующий).

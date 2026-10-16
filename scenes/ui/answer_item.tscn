@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bv80qy227xxee"]
 
-[ext_resource type="Script" uid="uid://dbrnsck0vtfb3" path="res://Core/UI/Dialog/AnswerItem.cs" id="1_answeritem"]
+[ext_resource type="Script" uid="uid://dbrnsck0vtfb3" path="res://mods/dialog_base/src/UI/Dialog/AnswerItem.cs" id="1_answeritem"]
 
 [node name="AnswerItem" type="Control" unique_id=1180917887]
 custom_minimum_size = Vector2(0, 50)

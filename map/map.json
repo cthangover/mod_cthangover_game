@@ -1,0 +1,122 @@
+{
+  "Items": [
+    {
+      "ID": "home",
+      "points": [
+        [
+          0.5887548,
+          0.264396
+        ],
+        [
+          0.6100419,
+          0.25477746
+        ],
+        [
+          0.6247227,
+          0.23549321
+        ],
+        [
+          0.62986094,
+          0.2014098
+        ],
+        [
+          0.60765624,
+          0.19486304
+        ],
+        [
+          0.5865526,
+          0.18178055
+        ],
+        [
+          0.5630633,
+          0.19693027
+        ],
+        [
+          0.56253225,
+          0.233722
+        ]
+      ],
+      "title": "",
+      "scene": "home_outside",
+      "description": "mapzone/home/info",
+      "image_pos": [
+        0,
+        0
+      ],
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "ID": "home_label",
+      "points": [],
+      "title": "mapzone/home",
+      "image_pos": [
+        0,
+        0
+      ],
+      "label_pos": [
+        0.5990954,
+        0.15155637
+      ],
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "ID": "town_entry",
+      "points": [
+        [
+          0.7098713,
+          0.24926566
+        ],
+        [
+          0.7333606,
+          0.26303816
+        ],
+        [
+          0.73482865,
+          0.2905831
+        ],
+        [
+          0.73042434,
+          0.31537354
+        ],
+        [
+          0.7091372,
+          0.34291852
+        ],
+        [
+          0.69739264,
+          0.32639155
+        ],
+        [
+          0.7010628,
+          0.2740561
+        ]
+      ],
+      "title": "",
+      "scene": "town_entry",
+      "description": "mapzone/town_entry/info",
+      "image_pos": [
+        0,
+        0
+      ],
+      "locked": false,
+      "hidden": false
+    },
+    {
+      "ID": "town_entry_label",
+      "points": [],
+      "title": "mapzone/town_entry",
+      "image_pos": [
+        0,
+        0
+      ],
+      "label_pos": [
+        0.72461617,
+        0.21628697
+      ],
+      "locked": false,
+      "hidden": false
+    }
+  ]
+}

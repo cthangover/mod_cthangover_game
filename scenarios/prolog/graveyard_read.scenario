@@ -19,7 +19,8 @@ text "Лопухов не было. Только крапива да стары�
 text "Он потянул страницу за уголок — ноль реакции. Дёрнул сильнее: бумага была твёрдой, как металл, но гибкой. Он рвал и так, и сяк, даже ногтями пытался. Бесполезно." first=marao/sad
 text "— Что за брак! Я за такие деньги..." first=marao/sad
 
-action quest.add_tag quest_id=NakedMorningQuest tag=graveyard_read
+action quest.add_tag quest_id=AwakeningQuest tag=graveyard_read
+action quest.set_data_status quest_id=AwakeningQuest level=3
 interactive_remove crypt_spot
 interactive_add book_wipe
 end

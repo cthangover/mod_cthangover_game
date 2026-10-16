@@ -1,5 +1,6 @@
 # Клик по книге — Аль-Азиф просыпается (канон: глава 4).
 # Файл без шапки: InteractiveManager отрезает метаданные, играет только тело.
+title "Глава 4. Аль Азиф просыпается"
 text "Марао плюнул и присел, сложив книгу стопкой страниц. Поднёс к пятой точке." first=marao/think
 ptext "Книга заорала."
 ptext "— НЕ СМЕЙ!"
@@ -28,8 +29,9 @@ ptext "Вдалеке снова засвистели полицейские с�
 sound locations/prolog/police
 text "Марао встал, накинул красную тряпку и сунул книгу под мышку." first=marao/smile
 text "— Валим. Давай, книжка, показывай, где тут трактир. А то у меня всего две мысли: «нахера я такой голый» и «где бы опохмелиться»." first=marao/smile
-title "Конец пролога. Впереди — дорога вдоль реки..."
 
-action quest.add_tag quest_id=NakedMorningQuest tag=azif_awake
+action quest.add_tag quest_id=AwakeningQuest tag=azif_awake
+action quest.set_data_status quest_id=AwakeningQuest level=4
 interactive_remove book_wipe
+switch_scene prolog_river
 end

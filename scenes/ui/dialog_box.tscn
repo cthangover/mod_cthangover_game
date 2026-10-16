@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://b8vnxfoixyust"]
 
-[ext_resource type="Script" uid="uid://b41bti3wq4m88" path="res://Core/UI/Dialog/DialogBox.cs" id="1_dialogbox"]
-[ext_resource type="PackedScene" path="res://scenes/ui/answer_box.tscn" id="2_answerbox"]
+[ext_resource type="Script" uid="uid://b41bti3wq4m88" path="res://mods/dialog_base/src/UI/Dialog/DialogBox.cs" id="1_dialogbox"]
 
-[node name="DialogBox" type="Control" unique_id=702809053 node_paths=PackedStringArray("textField", "titleField", "titleBody", "firstAvatar", "secondAvatar")]
+[ext_resource type="PackedScene" path="res://mods/visual_novel_core/scenes/ui/answer_box.tscn" id="2_answerbox"]
+
+[node name="DialogBox" type="Control" unique_id=702809053]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,11 +13,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dialogbox")
 answerBoxScene = ExtResource("2_answerbox")
-textField = NodePath("DialogBody/TextField")
-titleField = NodePath("TitleBody/TitleField")
-titleBody = NodePath("TitleBody")
-firstAvatar = NodePath("FirstAvatar")
-secondAvatar = NodePath("SecondAvatar")
 
 [node name="DialogBody" type="ColorRect" parent="." unique_id=1510369637]
 layout_mode = 1
@@ -27,7 +23,7 @@ anchor_bottom = 1.0
 offset_top = -300.0
 grow_horizontal = 2
 grow_vertical = 0
-color = Color(0, 0, 0, 0.85)
+color = Color(0.054902, 0.058824, 0.082353, 0.9)
 
 [node name="TextField" type="Label" parent="DialogBody" unique_id=2065569930]
 layout_mode = 1
@@ -41,6 +37,7 @@ offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.909804, 0.898039, 0.870588, 1)
 vertical_alignment = 1
 autowrap_mode = 2
 
@@ -103,5 +100,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(0.956863, 0.941176, 0.905882, 1)
 horizontal_alignment = 1
 vertical_alignment = 1

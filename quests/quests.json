@@ -1,17 +1,21 @@
 {
+  "Kind": "quest",
   "Items": [
     {
-      "Id": "PrologQuest",
-      "Name": "quest/prolog",
+      "Id": "AwakeningQuest",
+      "Name": "quest/awakening",
       "StatusToDescription": {
-        "0": "quest/prolog/0",
-        "1": "quest/prolog/1",
-        "2": "quest/prolog/2"
+        "0": "quest/awakening/0",
+        "1": "quest/awakening/1",
+        "2": "quest/awakening/2",
+        "3": "quest/awakening/3",
+        "4": "quest/awakening/4",
+        "5": "quest/awakening/5"
       }
     },
     {
-      "Id": "NakedMorningQuest",
-      "Name": "quest/naked_morning"
+      "Id": "OldHouseQuest",
+      "Name": "quest/old_house"
     }
   ]
 }

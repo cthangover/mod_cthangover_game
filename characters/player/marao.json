@@ -1,13 +1,19 @@
 {
-  "Id": "Marao",
-  "Name": "characters/player/marao",
-  "Image": "characters/player/marao",
-  
-  "Level": 1,
-  "Point": 1,
-  "Health": 16,
-  "Defence": 0,
-  "Attack": 5,
-  
-  "Actions": ["physics/attack", "physics/defence"]
+  "Kind": "character",
+  "Items": [
+    {
+      "Id": "Marao",
+      "Name": "characters/player/marao",
+      "Image": "characters/player/marao",
+      "Level": 1,
+      "Point": 1,
+      "Health": 16,
+      "Defence": 0,
+      "Attack": 5,
+      "Actions": [
+        "physics/attack",
+        "physics/defence"
+      ]
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://Core/UI/Menu/GameMenu.cs" id="GameMenuScript"]
+[ext_resource type="Script" path="res://mods/interface/src/Menu/GameMenu.cs" id="GameMenuScript"]
 
 [node name="GameMenu" type="Control"]
 layout_mode = 3
@@ -19,7 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.65)
+color = Color(0, 0, 0, 0.9)
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -53,13 +53,16 @@ theme_override_constants/separation = 10
 
 [node name="Title" type="Label" parent="Panel/Margin/VBox"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(0.956863, 0.941176, 0.905882, 1)
 text = "Меню"
 horizontal_alignment = 1
-theme_override_font_sizes/font_size = 22
+uppercase = true
 
 [node name="ReturnBtn" type="Button" parent="Panel/Margin/VBox"]
 layout_mode = 2
 text = "Вернуться"
+theme_type_variation = "CthangoverPrimary"
 
 [node name="SaveBtn" type="Button" parent="Panel/Margin/VBox"]
 layout_mode = 2
@@ -84,3 +87,4 @@ text = "Главное меню"
 [node name="ExitBtn" type="Button" parent="Panel/Margin/VBox"]
 layout_mode = 2
 text = "Выход"
+theme_type_variation = "CthangoverDanger"

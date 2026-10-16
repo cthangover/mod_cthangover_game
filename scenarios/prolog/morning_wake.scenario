@@ -13,5 +13,7 @@ text "Холодный воздух пробрал до костей. Марао
 text "— Да что ж такое! Где мои штаны?!" first=marao/sad
 text "Он был абсолютно голый. Босые ступни на холодном камне. Тело болело — как будто его били чем-то тяжёлым. Возможно ногами. Возможно и по лицу." first=marao/sad
 
+action quest.set_status quest_id=AwakeningQuest status=Progress
+action quest.send_notification quest_id=AwakeningQuest
 notify "Осмотрись. В переулке что-то лежит."
 end
