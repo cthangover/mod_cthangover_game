@@ -6,7 +6,7 @@ text "— Какая-то мутная хрень. Откуда она у мен
 text "В голове мелькнул смутный образ: он в какой-то лавке протягивает монеты и берёт книгу. Но когда? Где? Почему? Больше ничего." first=marao/think
 text "Марао пожал плечами и сунул книгу под мышку." first=marao/smile
 text "— Ладно, бумага не жрёт. Пойдём, найдём, где опохмелиться." first=marao/smile
-action quest.add_tag quest_id=NakedMorningQuest tag=book_taken
+action quest.add_tag quest_id=AwakeningQuest tag=book_taken
 interactive_remove book_ground
 switch_scene prolog_alley
 end

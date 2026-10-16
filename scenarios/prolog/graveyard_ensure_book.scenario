@@ -1,6 +1,6 @@
 scene: prolog_graveyard
 priority: 15
-condition: NakedMorningQuest.hasTag("graveyard_read") && NakedMorningQuest.notHasTag("azif_awake")
+condition: AwakeningQuest.hasTag("graveyard_read") && AwakeningQuest.notHasTag("azif_awake")
 ---
 # Прочитано, но Аль-Азиф ещё не проснулся: держим хотспот книги на сцене.
 interactive_add book_wipe

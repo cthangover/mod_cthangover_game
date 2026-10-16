@@ -1,0 +1,6 @@
+{
+  "name": "prolog_villa",
+  "defaultBackground": "prolog/villa",
+  "defaultAmbient": "locations/home/outside/river",
+  "defaultScenario": "scenarios/prolog/villa_arrival.scenario"
+}

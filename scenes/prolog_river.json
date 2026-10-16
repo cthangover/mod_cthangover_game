@@ -1,0 +1,6 @@
+{
+  "name": "prolog_river",
+  "defaultBackground": "prolog/river",
+  "defaultAmbient": "locations/home/outside/river",
+  "defaultScenario": "scenarios/prolog/river_arrival.scenario"
+}

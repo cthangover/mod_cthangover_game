@@ -1,11 +1,12 @@
 scene: prolog_alley
 priority: 20
 is_one_run: true
-condition: NakedMorningQuest.hasTag("cloak_taken") && NakedMorningQuest.hasTag("book_taken")
+condition: AwakeningQuest.hasTag("cloak_taken") && AwakeningQuest.hasTag("book_taken")
 ---
 sound locations/prolog/police
 delay 0.7 hidden=true
 title "Глава 2. Погоня"
+action quest.set_data_status quest_id=AwakeningQuest level=1
 
 ptext "Из подворотни вышли трое полицейских в синих мундирах, с медными пуговицами, начищенными до блеска."
 ptext "— ЭЙ, ТЫ! СТОЯТЬ!"

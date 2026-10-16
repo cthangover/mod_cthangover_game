@@ -1,6 +1,6 @@
 scene: prolog_alley
 priority: 15
-condition: NakedMorningQuest.hasTag("cloak_taken") && NakedMorningQuest.notHasTag("book_taken")
+condition: AwakeningQuest.hasTag("cloak_taken") && AwakeningQuest.notHasTag("book_taken")
 ---
 # Тряпка взята, книга ещё нет: возвращаем книгу после перезагрузки сцены.
 interactive_add book_ground

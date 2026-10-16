@@ -1,0 +1,27 @@
+scene: prolog_villa
+priority: 10
+is_one_run: true
+---
+background prolog/villa
+
+text "За поворотом реки показался дом." first=marao/think
+text "Двухэтажный, деревянный, с резными наличниками. Штукатурка облезла, ставни висели криво — как зубы в пьяной драке." first=marao/think
+text "Вокруг — сад в человеческий рост, ржавый колодец и тишина." first=marao/think
+text "Над дверью — табличка: «Вилла “Забвение”»." first=marao/think
+text "— Забвение. Красиво. — Марао хмыкнул. — Раньше тут, наверное, держали нервных. Ну, я как раз нервный. Без штанов." first=marao/smile
+
+text "Он постучал. Тишина." first=marao/think
+text "Постучал сильнее. Эхо прошлось по коридору и вернулось. Одинокое." first=marao/think
+text "— Хозяева! Пустите путника переночевать! Я не маньяк, у меня даже оружия нет. Кроме книги!" first=marao/smile
+ptext "Книга под мышкой возмущённо зашуршала. Но промолчала."
+
+text "Марао дёрнул ручку. Дверь поддалась с противным скрипом, и в лицо ему пахнуло сыростью, плесенью и пылью." first=marao/think
+text "— Ну хоть не падалью. — Он шагнул внутрь. — Уже дом." first=marao/smile
+
+action quest.add_tag quest_id=AwakeningQuest tag=villa_reached
+action quest.set_status quest_id=AwakeningQuest status=End
+action quest.set_status quest_id=OldHouseQuest status=Progress
+action quest.send_notification quest_id=OldHouseQuest
+notify "Вилла «Забвение» стала твоим домом. Наверное."
+switch_scene home_vestibule
+end
