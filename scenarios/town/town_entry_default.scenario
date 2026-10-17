@@ -1,7 +1,7 @@
 scene: town_entry
 priority: 40
 ---
-select "" key=town_entry/prompt
+select ""
 option "Вернуться к дому" key=town_entry/opt_home -> :home
 option "На площадь" key=town_entry/opt_square -> :square
 
