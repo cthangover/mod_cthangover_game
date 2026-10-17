@@ -5,7 +5,7 @@
   "author": "ct",
   "description": "Visual novel content and UI on top of the 2D platform: scenarios, characters, items, quests and the dialog layer patched into the base shell",
   "category": "engine, story",
-  "depends": ["base2d>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "interface>=1"],
+  "depends": ["base2d>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "interface>=1", "characters_base>=1", "items_base>=1", "quests_base>=1"],
   "ui": [
     {
       "id": "map",
