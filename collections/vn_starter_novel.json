@@ -4,6 +4,8 @@
   "name": "@collections/vn_starter_novel/name",
   "description": "@collections/vn_starter_novel/description",
   "author": "ct",
+  "entry": { "scene": "start_scene" },
+  "settings": { "battle.core": "card_battle" },
   "version": "1.0.0",
   "tags": [
     "novel",
@@ -28,7 +30,8 @@
       "description": "@collections/vn_starter_novel/mechanic/vn_core/description",
       "role": "story",
       "mods": [
-        "visual_novel_core>=1"
+        "visual_novel_core>=1",
+        "starter_party>=1"
       ]
     },
     {
@@ -38,7 +41,8 @@
       "role": "battle",
       "optional": true,
       "mods": [
-        "turn_battle_base>=1"
+        "turn_battle_base>=1",
+        "card_battle>=1"
       ]
     }
   ]
