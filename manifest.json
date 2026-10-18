@@ -1,59 +1,9 @@
 {
-  "id": "visual_novel_core",
-  "name": "Visual Novel Core",
+  "id": "cthangover_story",
+  "name": "Cthangover: Story",
   "version": "2.0.0",
   "author": "ct",
-  "description": "Visual novel content and UI on top of the 2D platform: scenarios, characters, items, quests and the dialog layer patched into the base shell",
-  "category": "engine, story",
-  "depends": ["base2d>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "interface>=1", "characters_base>=1", "items_base>=1", "quests_base>=1"],
-  "ui": [
-    {
-      "id": "map",
-      "kind": "panel",
-      "slot": "ModBeforeUIPanel",
-      "scene_path": "scenes/ui/map_widget.tscn",
-      "button": {
-        "icon": "map",
-        "locale": "ui/map/title",
-        "index": 10
-      },
-      "priority": 10
-    },
-    {
-      "id": "inventory",
-      "kind": "panel",
-      "slot": "ModBeforeUIPanel",
-      "scene_path": "scenes/ui/inventory_panel.tscn",
-      "button": {
-        "icon": "bag",
-        "locale": "ui/inventory/title",
-        "index": 20
-      },
-      "priority": 10
-    },
-    {
-      "id": "skills",
-      "kind": "panel",
-      "slot": "ModBeforeUIPanel",
-      "scene_path": "scenes/ui/skills_panel/skills_panel.tscn",
-      "button": {
-        "icon": "skills",
-        "locale": "ui/skills/title",
-        "index": 40
-      },
-      "priority": 10
-    },
-    {
-      "id": "game_menu",
-      "kind": "panel",
-      "slot": "ModBeforeUIPanel",
-      "scene_path": "scenes/menu/game_menu.tscn",
-      "button": {
-        "icon": "settings",
-        "locale": "menu/settings",
-        "index": 50
-      },
-      "priority": 10
-    }
-  ]
+  "description": "Story content of the Cthangover game: scenes, scenarios, characters, items, quests, backgrounds and the main game collection.",
+  "category": "story",
+  "depends": ["shell2d_base>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "ui_base>=1", "characters_base>=1", "items_base>=1", "quests_base>=1"]
 }

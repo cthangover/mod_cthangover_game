@@ -20,7 +20,7 @@
       "role": "story",
       "description": "Scenes, scenarios, the prologue, Murakami's story line and the starter party.",
       "locale": [ { "lang": "ru", "name": "Сюжет", "description": "Сцены, сценарии, пролог, линия Мураками и стартовая партия." } ],
-      "mods": ["visual_novel_core>=2", "murakami>=1", "starter_party>=1"]
+      "mods": ["cthangover_story>=2", "cthangover_murakami>=1", "cthangover_party>=1"]
     },
     {
       "id": "novel_engine",
@@ -28,7 +28,7 @@
       "role": "engine",
       "description": "2D shell, dialogs and scenario DSL, interactive objects, effects, in-game time and lighting, the world map.",
       "locale": [ { "lang": "ru", "name": "Движок новеллы", "description": "2D-оболочка, диалоги и сценарный DSL, интерактивные объекты, эффекты, игровое время и свет, карта мира." } ],
-      "mods": ["base2d>=1", "dialog_base>=1", "interactive_base>=1", "effects_base>=1", "time_base>=1", "map_base>=1"]
+      "mods": ["shell2d_base>=1", "dialog_base>=1", "interactive_base>=1", "effects_base>=1", "time_base>=1", "map_base>=1"]
     },
     {
       "id": "characters",
@@ -87,7 +87,7 @@
       "description": "Live2D Cubism runtime for animated avatars.",
       "locale": [ { "lang": "ru", "name": "Live2D", "description": "Среда Live2D Cubism для анимированных аватаров." } ],
       "optional": true,
-      "mods": ["live2d>=1"]
+      "mods": ["live2d_base>=1"]
     },
     {
       "id": "interface",
@@ -95,7 +95,7 @@
       "role": "ui",
       "description": "Widget toolkit and HUD, the main menu, music and sounds.",
       "locale": [ { "lang": "ru", "name": "Интерфейс и звук", "description": "Виджеты и HUD, главное меню, музыка и звуки." } ],
-      "mods": ["interface>=1", "base_menu>=1", "audio_base>=1"]
+      "mods": ["ui_base>=1", "menu_base>=1", "audio_base>=1"]
     },
     {
       "id": "dev_tools",
@@ -104,7 +104,7 @@
       "description": "Scenario and map editors, the validator, the resource atlas, the locale key map and the mod manager.",
       "locale": [ { "lang": "ru", "name": "Инструменты разработчика", "description": "Редакторы сценариев и карт, валидатор, карта ресурсов, карта локализации и менеджер модов." } ],
       "optional": true,
-      "mods": ["tools>=1", "validator>=0.1", "resource_atlas>=0.1", "locale_atlas>=0.1", "mod_manager>=1"]
+      "mods": ["editor_tools>=1", "validator>=0.1", "resource_atlas>=0.1", "locale_atlas>=0.1", "mod_manager>=1"]
     }
   ]
 }
