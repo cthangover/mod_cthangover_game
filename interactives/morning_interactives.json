@@ -8,17 +8,49 @@
       "enabled": true,
       "visible": true,
       "cursor": "PointingHand",
-	  "hitArea": {
-        "type": "rect",
-        "x": 0.27239782,
-        "y": 0.7092288,
-        "width": 0.06675094,
-        "height": 0.17319852,
-        "radius": 0.05
+      "hitArea": {
+        "type": "polygon",
+        "x": 0.2788022,
+        "y": 0.7062248,
+        "width": 0.091567576,
+        "height": 0.17770463,
+        "radius": 0.05,
+        "vertices": [
+          {
+            "x": 0.27960268,
+            "y": 0.7317591
+          },
+          {
+            "x": 0.32073653,
+            "y": 0.716739
+          },
+          {
+            "x": 0.34555304,
+            "y": 0.84337497
+          },
+          {
+            "x": 0.3732654,
+            "y": 0.86139894
+          },
+          {
+            "x": 0.3386896,
+            "y": 0.8872055
+          },
+          {
+            "x": 0.3082694,
+            "y": 0.7610366
+          }
+        ]
       },
-      "highlight": { "color": "#FFD70044", "scale": 1, "duration": 0.12 },
+      "highlight": {
+        "color": "#FFD70044",
+        "scale": 1,
+        "duration": 0.12
+      },
       "actions": {
-        "onClick": { "scenario": "scenarios/prolog/morning_cloak.scenario" }
+        "onClick": {
+          "scenario": "scenarios/prolog/morning_cloak.scenario"
+        }
       }
     },
     {
@@ -29,10 +61,23 @@
       "enabled": true,
       "visible": true,
       "cursor": "PointingHand",
-      "hitArea": { "type": "rect", "x": 0.30, "y": 0.66, "width": 0.10, "height": 0.09 },
-      "highlight": { "color": "#9966FF44", "scale": 1, "duration": 0.12 },
+      "hitArea": {
+        "type": "rect",
+        "x": 0.79553235,
+        "y": 0.74711686,
+        "width": 0.09439635,
+        "height": 0.07047379,
+        "radius": 0.05
+      },
+      "highlight": {
+        "color": "#9966FF44",
+        "scale": 1,
+        "duration": 0.12
+      },
       "actions": {
-        "onClick": { "scenario": "scenarios/prolog/morning_book.scenario" }
+        "onClick": {
+          "scenario": "scenarios/prolog/morning_book.scenario"
+        }
       }
     }
   ]

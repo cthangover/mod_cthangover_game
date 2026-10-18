@@ -1,7 +1,7 @@
 scene: home_vestibule
 priority: 40
 ---
-light_set [{"x":0.32427186,"y":0.5831858,"radius":300,"influence":1,"color":"#ffff00"},{"x":0.11262136,"y":0.44159293,"radius":300,"influence":0.6,"color":"#ffff00"}]
+light_set [{"x":0.31837204,"y":0.58041835,"radius":300,"influence":1,"color":"#ffff00"},{"x":0.11557116,"y":0.44574395,"radius":300,"influence":0.6,"color":"#ffff00"}]
 select ""
 option "В рабочую комнату" key=vestibule/diner/opt_workroom -> :workroom
 option "В обеденную комнату" key=vestibule/diner/opt_dinerroom -> :kitchen
