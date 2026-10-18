@@ -1,7 +1,7 @@
 scene: home_outside
 priority: 10
 ---
-light_set [{"x":0.29462293,"y":0.43369123,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.29967362,"y":0.62050235,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.49256954,"y":0.40350124,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.5846468,"y":0.37935096,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.33943588,"y":0.41643897,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.43495983,"y":0.41557643,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.30102944,"y":0.5208026,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.67573905,"y":0.40436372,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.3522381,"y":0.5113151,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.6782009,"y":0.507865,"radius":150,"influence":1,"color":"#ffff00"}]
+light_set [{"x":0.805989,"y":0.28035545,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.6052956,"y":0.40425685,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.85641646,"y":0.49430165,"radius":100,"influence":1,"color":"#ffff00"},{"x":0.7054866,"y":0.4456003,"radius":150,"influence":1,"color":"#ffff00"},{"x":0.6645251,"y":0.26138362,"radius":100,"influence":1,"color":"#ffff00"}]
 select ""
 option "Зайти в дом" key=home_outside/opt_enter -> :enter
 option "В город" key=home_outside/opt_town -> :town

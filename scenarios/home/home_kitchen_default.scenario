@@ -1,7 +1,7 @@
 scene: home_kitchen
 priority: 10
 ---
-light_set [{"x":0.43052286,"y":0.5760054,"radius":500,"influence":1,"color":"#ffff00"},{"x":0.103702,"y":0.26946074,"radius":500,"influence":1,"color":"#ffff00"}]
+light_set [{"x":0.6731463,"y":0.4611617,"radius":500,"influence":1,"color":"#ffff00"},{"x":0.13467516,"y":0.3151215,"radius":500,"influence":1,"color":"#ffff00"}]
 select "Комната оборудованная под кухню" key=rooms/kitchen/prompt
 option "Выйти" key=rooms/kitchen/opt_exit -> :exit
 
