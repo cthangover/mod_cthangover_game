@@ -2,5 +2,8 @@ scene: start_scene
 priority: 0
 is_one_run: true
 ---
+# The starter kit of a new game (it used to be hard-coded in items_base's inventory).
+action item.add id=food/wolf_meat count=10
+action item.add id=resource/branches count=10
 switch_scene prolog_alley
 end
