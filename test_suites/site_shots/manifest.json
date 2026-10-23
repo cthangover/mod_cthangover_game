@@ -1,0 +1,11 @@
+{
+  "name": "Site Screenshots",
+  "description": "Takes the screenshots of the cthangover.ru site from the main game: the prologue dialog, several locations with their scenarios, the inventory, character, map, journal and skills panels, and a card battle in front of the town entry. Activated by --itest=site_shots with --game=cthangover --new and --shots=<dir> (windowed runs only); the language comes from the player's settings.",
+  "sources": [
+    "src/*.cs"
+  ],
+  "depends": [
+    "cthangover_game>=2",
+    "turn_battle_base>=2"
+  ]
+}
