@@ -5,5 +5,8 @@
   "author": "ct",
   "description": "Story content of the Cthangover game: scenes, scenarios, characters, items, quests, backgrounds and the main game collection.",
   "category": "story",
-  "depends": ["shell2d_base>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "ui_base>=1", "characters_base>=1", "items_base>=1", "quests_base>=1", "town_pack>=1"]
+  "depends": ["shell2d_base>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "ui_base>=1", "characters_base>=1", "items_base>=1", "quests_base>=1", "town_pack>=1"],
+  "test_suites": [
+    {"id": "site_shots", "activate": ["--itest=site_shots"]}
+  ]
 }
