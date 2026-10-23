@@ -6,6 +6,7 @@ using Cthangover.Core.Settings;
 using Cthangover.Core.UI;
 using Cthangover.Core.Utils;
 using Cthangover.Mods.Dialog;
+using Cthangover.Mods.Interface.View;
 using Godot;
 
 namespace Cthangover.Mods.CthangoverGame.Tests
@@ -257,7 +258,7 @@ namespace Cthangover.Mods.CthangoverGame.Tests
             if (string.IsNullOrEmpty(shotsDir) || DisplayServer.GetName() == "headless")
                 return;
             DirAccess.MakeDirRecursiveAbsolute(shotsDir);
-            GetViewport().GetTexture().GetImage()?.SavePng(shotsDir.TrimEnd('/') + "/" + name + ".png");
+            ViewportCapture.SavePng(GetViewport(), shotsDir.TrimEnd('/') + "/" + name + ".png");
             GameLogger.Log("TEST", $"SiteShotsDriver: saved {name}.png");
         }
 
