@@ -32,7 +32,7 @@ namespace Cthangover.Mods.CthangoverGame.Tests
                 .Select(a => a.Substring("--shots=".Length))
                 .FirstOrDefault();
             GameLogger.Log("TEST", $"SiteShotsTestInitializer: activating site_shots, shots={shots ?? "off"}");
-            (Godot.Engine.GetMainLoop() as SceneTree)?.Root?.CallDeferred("add_child", new SiteShotsDriver(shots));
+            ModRoot.AddDeferred(new SiteShotsDriver(shots));
         }
     }
 }
