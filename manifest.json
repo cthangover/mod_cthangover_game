@@ -3,7 +3,7 @@
   "name": "Cthangover: Story",
   "version": "2.0.0",
   "author": "ct",
-  "description": "Story content of the Cthangover game: scenes, scenarios, characters, items, quests, backgrounds and the main game collection.",
+  "description": "The story content of Cthangover: scenes, scenarios, characters, items, quests and the world map of Marao's very bad night. The machinery lives in engine mods.",
   "category": "story",
   "depends": ["shell2d_base>=1", "dialog_base>=1", "interactive_base>=1", "skills_base>=1", "map_base>=1", "ui_base>=1", "characters_base>=1", "items_base>=1", "quests_base>=1", "town_pack>=1", "music_pack>=1"],
   "test_suites": [
