@@ -1,0 +1,13 @@
+{
+  "id": "cthangover_game__marao_avatars",
+  "name": "Marao avatar auditions",
+  "version": "1.0.0",
+  "author": "ct",
+  "description": "Ten story-inspired anime reaction presets for the layered avatar renderer.",
+  "depends": [
+    "avatar_layers>=1"
+  ],
+  "test_sources": [
+    "tests/*.cs"
+  ]
+}

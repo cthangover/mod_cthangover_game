@@ -1,0 +1,294 @@
+{
+  "Kind": "avatar",
+  "Items": [
+    {
+      "Id": "cthangover/marao_test",
+      "Renderer": "layers",
+      "BaseValues": {
+        "canvas": {
+          "Width": 512,
+          "Height": 768
+        }
+      },
+      "Groups": {
+        "reaction": {
+          "Default": "neutral",
+          "Priority": 0,
+          "Presets": {
+            "neutral": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/neutral.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "hangover": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/hangover.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "pants_panic": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/pants_panic.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "rag_emperor": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/rag_emperor.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "deadpan_azif": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/deadpan_azif.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "poetry_reader": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/poetry_reader.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "police_panic": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/police_panic.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "suspicious": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/suspicious.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "bad_smell": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/bad_smell.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "protective": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/protective.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            }
+          }
+        },
+        "emotion": {
+          "Default": "auto",
+          "Priority": 20,
+          "Presets": {
+            "auto": {},
+            "neutral": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/neutral.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "open_mouth": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/emotion_open_mouth.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "eye_roll": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/emotion_eye_roll.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "confused": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/emotion_confused.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "angry_scream": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/pants_panic.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "fear": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/police_panic.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "embarrassed": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/emotion_embarrassed.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "gloating": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/rag_emperor.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 0.0,
+                  "Width": 512.0,
+                  "Height": 768.0
+                }
+              }
+            },
+            "squeamish": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/emotion_squeamish.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "disgust": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/bad_smell.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "talking_a": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/talking_a.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            },
+            "talking_b": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/marao_test/talking_b.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 256.0,
+                  "Width": 512.0,
+                  "Height": 512.0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

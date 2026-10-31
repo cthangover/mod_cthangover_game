@@ -1,0 +1,220 @@
+{
+  "Kind": "avatar",
+  "Items": [
+    {
+      "Id": "cthangover/al_azif_test",
+      "Renderer": "layers",
+      "BaseValues": {
+        "canvas": {
+          "Width": 512,
+          "Height": 768
+        },
+        "layers/character": {
+          "Image": "cthangover/al_azif_test/01_front_master.png",
+          "Order": 0,
+          "X": 0.0,
+          "Y": 143.0471771075019,
+          "Width": 512.0,
+          "Height": 481.9056457849962
+        }
+      },
+      "Groups": {
+        "emotion": {
+          "Default": "auto",
+          "Priority": 20,
+          "Presets": {
+            "auto": {},
+            "neutral": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/01_front_master.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.0471771075019,
+                  "Width": 512.0,
+                  "Height": 481.9056457849962
+                }
+              }
+            },
+            "open_mouth": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/05_emotion_open_mouth.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "eye_roll": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/06_emotion_eye_roll.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "confused": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/07_emotion_confused.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "angry_scream": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/08_emotion_angry_scream.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "fear": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/09_emotion_fear.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "embarrassed": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/10_emotion_embarrassed.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "gloating": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/11_emotion_gloating.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "squeamish": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/12_emotion_squeamish.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "disgust": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/13_emotion_disgust.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "talking_a": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/14_talking_a.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "talking_b": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/15_talking_b.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.43122102009275,
+                  "Width": 512.0,
+                  "Height": 481.1375579598145
+                }
+              }
+            }
+          }
+        },
+        "view": {
+          "Default": "auto",
+          "Priority": 100,
+          "Presets": {
+            "auto": {},
+            "front": {},
+            "angled": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/02_closed_angle.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "back": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/03_back_spine.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 143.24516627996906,
+                  "Width": 512.0,
+                  "Height": 481.5096674400619
+                }
+              }
+            },
+            "open": {
+              "Values": {
+                "layers/character": {
+                  "Image": "cthangover/al_azif_test/04_open.png",
+                  "Order": 0,
+                  "X": 0.0,
+                  "Y": 185.34831460674158,
+                  "Width": 512.0,
+                  "Height": 397.30337078651684
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
