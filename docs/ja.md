@@ -32,7 +32,7 @@ Cthangover は、ひどい一夜を過ごしたマラオが路地で目を覚ま
 ゲームの正体はコレクション **Cthangover** です。各ブロックがどの MOD の担当かを示します:
 
 ```text
-物語          cthangover_game, cthangover_murakami, cthangover_party, town_pack
+物語          cthangover_game, cthangover_murakami, town_pack
 2D エンジン   シェル、会話、インタラクティブ、時間と光、エフェクト、ワールドマップ
 キャラクター  キャラクターとスキル
 クエスト      ジャーナル
@@ -45,9 +45,7 @@ Live2D        アニメーションするアバター(任意)
 開発ツール (任意)  エディター、バリデーター、アトラス、MOD マネージャー
 ```
 
-- **Cthangover: Murakami** は独立したストーリーラインを追加し、**Cthangover: Starter Party** は最初からマラオをパーティに入れます。どちらも同じゲームの一部ですが、別々の MOD です。
-- **Town Pack** が街の入り口と玄関の画像を、**Music Pack** がサウンドトラックを提供します。この MOD は街の入り口シーン専用のプレイリストを追加しています。
-- コレクションは `battle.core` を `card_battle` に設定します。**Mods & Collections → コレクション → Cthangover → 構成を編集** から、この設定も各ブロックの MOD も変更できます。セーブはそのまま残ります。
+- **Cthangover: Murakami** は独立した物語を追加します。初期パーティは `cthangover_game` が用意します。`src/StarterPartyInitializer.cs` がリソース準備完了時とニューゲーム開始時にマラオを加え、`slave_master` を付与します。
 
 ## 作者向け
 

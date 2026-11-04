@@ -32,7 +32,7 @@ The prologue's scenarios are written in Russian and do not have translations yet
 The game is the collection **Cthangover**. Its blocks show which mods do what:
 
 ```text
-Story          cthangover_game, cthangover_murakami, cthangover_party, town_pack
+Story          cthangover_game, cthangover_murakami, town_pack
 2D engine      the shell, dialogues, interactives, time and light, effects, world map
 Characters     characters and skills
 Quests         the journal
@@ -45,9 +45,7 @@ Interface      UI toolkit, menu, audio
 Developer tools (optional)  editors, validator, atlases, mod manager
 ```
 
-- **Cthangover: Murakami** adds a separate story line and **Cthangover: Starter Party** puts Marao into the party at the start. They are part of the same game but separate mods.
-- **Town Pack** supplies the town entrance and vestibule pictures; **Music Pack** the soundtrack. This mod adds a scene-specific playlist for the town entrance.
-- The collection sets `battle.core` to `card_battle`. You can change it, or the mods of any block, in **Mods & Collections → Collections → Cthangover → Edit scheme**; your saves stay.
+- **Cthangover: Murakami** adds a separate story line. The starter party belongs to `cthangover_game`: `src/StarterPartyInitializer.cs` adds Marao and grants `slave_master` when resources become ready and when a new game starts.
 
 ## For authors
 

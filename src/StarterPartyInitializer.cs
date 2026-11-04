@@ -7,7 +7,7 @@ namespace Cthangover.Mods.StarterParty
 {
     /// <summary>
     /// Populates the initial player party with the default starter
-    /// character <c>"Marao"</c> when the cthangover_party mod finishes loading.
+    /// character <c>"Marao"</c> when the cthangover_game mod finishes loading.
     ///
     /// The party can only be populated during <c>OnModResourcesReady</c>,
     /// not earlier. <c>OnModLoaded</c> and the constructor fire inside
@@ -40,7 +40,7 @@ namespace Cthangover.Mods.StarterParty
         public void OnModLoaded(string modId) { }
 
         /// <summary>
-        /// Adds the cthangover_party mod's default starter character <c>"Marao"</c>
+        /// Adds the cthangover_game mod's default starter character <c>"Marao"</c>
         /// to both <c>Characters</c> and <c>BattleSet</c> via
         /// <c>CharacterData.AddCharacterToParty</c>. Called once, after
         /// all mod file providers and JSON resources are guaranteed to

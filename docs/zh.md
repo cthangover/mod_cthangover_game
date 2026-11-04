@@ -32,7 +32,7 @@ Cthangover 是一款黑色幽默的视觉小说，讲述马劳在糟透的一夜
 游戏就是合集 **Cthangover**。它的各个分组说明了每个模组的分工：
 
 ```text
-剧情          cthangover_game, cthangover_murakami, cthangover_party, town_pack
+剧情          cthangover_game, cthangover_murakami, town_pack
 2D 引擎       外壳、对话、场景交互、时间与光照、特效、世界地图
 角色          角色和技能
 任务          日志
@@ -45,9 +45,7 @@ Live2D        动态立绘（可选）
 开发者工具（可选）  编辑器、验证器、图集、模组管理器
 ```
 
-- **Cthangover: Murakami** 增加一条独立剧情线，**Cthangover: Starter Party** 则在开局就把马劳放进队伍。它们属于同一个游戏，但彼此是独立的模组。
-- **Town Pack** 提供小镇入口和门厅的图片，**Music Pack** 提供配乐。本模组为小镇入口场景单独添加了一个播放列表。
-- 合集将 `battle.core` 设为 `card_battle`。你可以在 **Mods & Collections → 合集 → Cthangover → 编辑结构** 中修改它，也可以调整任意分组的模组；存档不会受影响。
+- **Cthangover: Murakami** 添加独立剧情线。初始队伍由 `cthangover_game` 自己创建：`src/StarterPartyInitializer.cs` 在资源准备完毕以及开始新游戏时加入马劳并授予 `slave_master`。
 
 ## 给模组作者
 

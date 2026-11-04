@@ -32,7 +32,7 @@ Cthangover는 형편없던 하룻밤을 보낸 마라오가 골목에서 깨어�
 게임의 정체는 컬렉션 **Cthangover**입니다. 각 블록이 어떤 모드의 역할인지 보여 줍니다:
 
 ```text
-이야기        cthangover_game, cthangover_murakami, cthangover_party, town_pack
+이야기        cthangover_game, cthangover_murakami, town_pack
 2D 엔진       셸, 대화, 인터랙티브, 시간과 조명, 이펙트, 월드 맵
 캐릭터        캐릭터와 스킬
 퀘스트        저널
@@ -45,9 +45,7 @@ Live2D        애니메이션 아바타(선택)
 개발 도구 (선택)  에디터, 검증기, 아틀라스, 모드 관리자
 ```
 
-- **Cthangover: Murakami**는 별도의 스토리 라인을 추가하고, **Cthangover: Starter Party**는 시작부터 마라오를 파티에 넣습니다. 둘 다 같은 게임의 일부지만 별개의 모드입니다.
-- **Town Pack**은 마을 입구와 현관 그림을, **Music Pack**은 사운드트랙을 제공합니다. 이 모드는 마을 입구 장면 전용 재생 목록을 추가합니다.
-- 컬렉션은 `battle.core`를 `card_battle`로 설정합니다. **Mods & Collections → 컬렉션 → Cthangover → 구성 편집**에서 이 값을 바꾸거나 블록의 모드를 조정할 수 있으며, 저장 파일은 그대로 유지됩니다.
+- **Cthangover: Murakami**는 별도의 이야기를 추가합니다. 초기 파티는 `cthangover_game`이 만듭니다. `src/StarterPartyInitializer.cs`가 리소스 준비 완료 시와 새 게임 시작 시 마라오를 추가하고 `slave_master`를 부여합니다.
 
 ## 모드 작성자를 위해
 

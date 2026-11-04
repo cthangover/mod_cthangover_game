@@ -32,7 +32,7 @@ Kịch bản phần mở đầu viết bằng tiếng Nga và chưa có bản d�
 Trò chơi là bộ sưu tập **Cthangover**. Các khối của nó cho biết mod nào đảm nhận việc gì:
 
 ```text
-Cốt truyện     cthangover_game, cthangover_murakami, cthangover_party, town_pack
+Cốt truyện     cthangover_game, cthangover_murakami, town_pack
 Engine 2D      shell, hội thoại, tương tác, thời gian và ánh sáng, hiệu ứng, bản đồ thế giới
 Nhân vật       nhân vật và kỹ năng
 Nhiệm vụ       nhật ký
@@ -45,9 +45,7 @@ Giao diện      bộ công cụ UI, trình đơn, âm thanh
 Công cụ phát triển (tùy chọn)  trình soạn thảo, trình kiểm tra, atlas, trình quản lý mod
 ```
 
-- **Cthangover: Murakami** thêm một tuyến truyện riêng, còn **Cthangover: Starter Party** đưa Marao vào đội ngay từ đầu. Cả hai thuộc cùng một trò chơi nhưng là những mod riêng biệt.
-- **Town Pack** cung cấp hình lối vào thị trấn và tiền sảnh; **Music Pack** cung cấp nhạc nền. Mod này thêm một danh sách phát riêng cho cảnh lối vào thị trấn.
-- Bộ sưu tập đặt `battle.core` thành `card_battle`. Bạn có thể đổi giá trị này, cũng như các mod của bất kỳ khối nào, trong **Mods & Collections → Bộ sưu tập → Cthangover → Sửa sơ đồ**; các bản lưu của bạn vẫn được giữ nguyên.
+- **Cthangover: Murakami** thêm tuyến truyện riêng. Đội ban đầu do `cthangover_game` tạo: `src/StarterPartyInitializer.cs` thêm Marao và cấp `slave_master` khi tài nguyên sẵn sàng và khi bắt đầu ván mới.
 
 ## Dành cho tác giả
 
