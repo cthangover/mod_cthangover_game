@@ -5,7 +5,7 @@
     "src/*.cs"
   ],
   "depends": [
-    "cthangover_game>=2",
+    "cthangover_game>=0.1.0",
     "turn_battle_base>=2"
   ]
 }
