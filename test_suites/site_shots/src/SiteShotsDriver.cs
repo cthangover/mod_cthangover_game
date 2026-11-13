@@ -25,8 +25,9 @@ namespace Cthangover.Mods.CthangoverGame.Tests
     /// leaves only lamps visible) and the running dialog is aborted the way the
     /// scene editor's "Go to scene" does — otherwise the entered scene's scenario
     /// waits behind it. Before the panels the inventory is seeded and Murakami
-    /// joins the party, so they are not empty. Waits are tick counts, not
-    /// conditions on the picture; the checks only make sure each scene, panel and
+    /// joins the party, so they are not empty. Screenshot runs retain their visual
+    /// settles; other runs wait for scene/dialog/panel readiness and two real frames.
+    /// The checks only make sure each scene, panel and
     /// the battle were really reached. Result line:
     /// <c>[TEST_RESULT] name=site_shots passed=N failed=M</c>, exit 0/1, and a
     /// 240 s watchdog.
@@ -60,6 +61,8 @@ namespace Cthangover.Mods.CthangoverGame.Tests
         private int waitTicks;
         private double elapsed;
         private bool battleStarted;
+        private ulong waitStarted;
+        private ulong readyFrame;
 
         /// <summary>Creates the driver; <paramref name="shotsDir"/> null disables screenshots.</summary>
         public SiteShotsDriver(string shotsDir)
@@ -113,6 +116,8 @@ namespace Cthangover.Mods.CthangoverGame.Tests
 
         private void RunStep()
         {
+            if (string.IsNullOrEmpty(shotsDir) && !ReadyForStep())
+                return;
             switch (step)
             {
                 case 0:
@@ -157,7 +162,7 @@ namespace Cthangover.Mods.CthangoverGame.Tests
                     if (index < Panels.Length)
                     {
                         step = 4;
-                        waitTicks = PanelTicks;
+                        waitTicks = string.IsNullOrEmpty(shotsDir) ? 0 : PanelTicks;
                         return;
                     }
                     Next(PanelTicks);
@@ -195,7 +200,7 @@ namespace Cthangover.Mods.CthangoverGame.Tests
                     }
                     if (Box != null && !Box.IsDialogEnded && !Box.IsWaitingAnswer)
                         Box.NextAction();
-                    waitTicks = LineTicks;
+                    waitTicks = string.IsNullOrEmpty(shotsDir) ? 0 : LineTicks;
                     return;
                 case 12:
                     Shot("battle");
@@ -206,6 +211,41 @@ namespace Cthangover.Mods.CthangoverGame.Tests
                     Finish();
                     return;
             }
+        }
+
+        // Screenshot pacing is preserved above; smoke runs wait for the same visible state.
+        private bool ReadyForStep()
+        {
+            var dialogReady = Box?.IsRunning == true && !Box.Runtime.IsWaitTime && !Box.Runtime.IsWaitEvent;
+            var ready = step switch
+            {
+                0 => Boot.IsReady && SceneManager.GetCurrentSceneName() == Prologue && dialogReady,
+                2 or 3 => SceneManager.GetCurrentSceneName() == Locations[index] && dialogReady,
+                4 => UiHost.Instance != null,
+                5 => UiHost.Instance.TryGetInstance(Panels[index], out var panel) && panel.Visible,
+                7 or 8 => SceneManager.GetCurrentSceneName() == StoryScene && Box?.IsWaitingAnswer == true,
+                9 or 10 => dialogReady,
+                11 => battleStarted || dialogReady,
+                12 or 13 => battleStarted && GetTree().CurrentScene is Cthangover.Core.Battle.BattleSceneContext,
+                _ => true
+            };
+            ready &= !GodotSceneService.IsTransitioning;
+            var now = Godot.Time.GetTicksMsec();
+            if (waitStarted == 0)
+                waitStarted = now;
+            if (now - waitStarted > 15000)
+                throw new System.TimeoutException($"readiness at step {step}, scene='{SceneManager.GetCurrentSceneName()}', panel/location index={index}");
+            if (!ready)
+            {
+                readyFrame = 0;
+                return false;
+            }
+            if (readyFrame == 0)
+                readyFrame = Engine.GetProcessFrames();
+            if (Engine.GetProcessFrames() - readyFrame < 2)
+                return false;
+            waitStarted = readyFrame = 0;
+            return true;
         }
 
         /// <summary>Noon, no dialog left running, then the switch.</summary>
@@ -231,7 +271,7 @@ namespace Cthangover.Mods.CthangoverGame.Tests
         private void Next(int ticks)
         {
             step++;
-            waitTicks = ticks;
+            waitTicks = string.IsNullOrEmpty(shotsDir) ? 0 : ticks;
         }
 
         private void Check(bool condition, string what)
