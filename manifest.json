@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "ct",
   "description": "The story content of Cthangover: scenes, scenarios, characters, items, quests and the world map of Marao's very bad night. The machinery lives in engine mods.",
-  "category": "story",
+  "categories": ["story"],
   "depends": [
     "shell2d_base>=0.1.0",
     "dialog_base>=0.1.0",
