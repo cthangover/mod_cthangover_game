@@ -6,6 +6,6 @@
   ],
   "depends": [
     "cthangover_game>=0.1.0",
-    "turn_battle_base>=2"
+    "turn_battle_base>=0.1.0"
   ]
 }
