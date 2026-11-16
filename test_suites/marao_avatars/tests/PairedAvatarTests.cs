@@ -35,7 +35,7 @@ namespace Cthangover.Mods.MaraoAvatars.Tests
             var bookStates = definitions[Book].Groups["emotion"].Presets.Keys.OrderBy(Identity, StringComparer.Ordinal).ToArray();
             ModAssert.Equal(13, states.Length, "twelve shared states plus auto");
             ModAssert.Equal(string.Join(",", states), string.Join(",", bookStates), "same public emotion names");
-            var tree = (SceneTree)Engine.GetMainLoop();
+            var tree = (SceneTree)Godot.Engine.GetMainLoop();
             var viewport = new SubViewport { Size = new Vector2I(512, 768), TransparentBg = true,
                 Disable3D = true, RenderTargetUpdateMode = SubViewport.UpdateMode.Always };
             try
@@ -86,7 +86,7 @@ namespace Cthangover.Mods.MaraoAvatars.Tests
         public static async Task Comparison(ModTestContext ctx)
         {
             ModAssert.True(GameEnvironment.IsRuntime);
-            var tree = (SceneTree)Engine.GetMainLoop();
+            var tree = (SceneTree)Godot.Engine.GetMainLoop();
             var viewport = new SubViewport { Size = new Vector2I(1920, 1920), TransparentBg = false,
                 Disable3D = true, RenderTargetUpdateMode = SubViewport.UpdateMode.Always };
             var renderers = new List<IAvatarRenderer>();

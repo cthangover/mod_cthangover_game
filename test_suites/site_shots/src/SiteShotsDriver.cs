@@ -241,8 +241,8 @@ namespace Cthangover.Mods.CthangoverGame.Tests
                 return false;
             }
             if (readyFrame == 0)
-                readyFrame = Engine.GetProcessFrames();
-            if (Engine.GetProcessFrames() - readyFrame < 2)
+                readyFrame = Godot.Engine.GetProcessFrames();
+            if (Godot.Engine.GetProcessFrames() - readyFrame < 2)
                 return false;
             waitStarted = readyFrame = 0;
             return true;

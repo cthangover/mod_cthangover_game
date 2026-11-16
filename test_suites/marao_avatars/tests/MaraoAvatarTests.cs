@@ -29,7 +29,7 @@ namespace Cthangover.Mods.MaraoAvatars.Tests
         public static async Task Reactions(ModTestContext ctx)
         {
             ModAssert.True(GameEnvironment.IsRuntime, "visual audition requires the Godot runtime");
-            var tree = (SceneTree)Engine.GetMainLoop();
+            var tree = (SceneTree)Godot.Engine.GetMainLoop();
             var viewport = new SubViewport { Size = new Vector2I(512, 768), TransparentBg = true,
                 Disable3D = true, RenderTargetUpdateMode = SubViewport.UpdateMode.Always };
             var avatar = AvatarCatalog.Create(AvatarId);
@@ -78,7 +78,7 @@ namespace Cthangover.Mods.MaraoAvatars.Tests
         public static async Task Comparison(ModTestContext ctx)
         {
             ModAssert.True(GameEnvironment.IsRuntime, "comparison sheet requires the Godot runtime");
-            var tree = (SceneTree)Engine.GetMainLoop();
+            var tree = (SceneTree)Godot.Engine.GetMainLoop();
             var viewport = new SubViewport { Size = new Vector2I(1440, 960), TransparentBg = false,
                 Disable3D = true, RenderTargetUpdateMode = SubViewport.UpdateMode.Always };
             var renderers = new List<IAvatarRenderer>();
