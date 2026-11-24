@@ -1,0 +1,6 @@
+{
+  "name": "forest",
+  "defaultBackground": "town/forest",
+  "defaultAmbient": "",
+  "defaultScenario": "scenarios/town/forest_default.scenario"
+}

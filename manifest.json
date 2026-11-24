@@ -33,6 +33,12 @@
       "activate": [
         "--itest=marao_avatars"
       ]
+    },
+    {
+      "id": "story_routes",
+      "activate": [
+        "--itest=cthangover_story_routes"
+      ]
     }
   ]
 }

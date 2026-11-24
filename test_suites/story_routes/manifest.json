@@ -1,0 +1,12 @@
+{
+  "id": "cthangover_game__story_routes",
+  "name": "Cthangover story references",
+  "version": "0.1.0",
+  "depends": [
+    "cthangover_murakami>=0.1.0",
+    "validator>=0.1.0"
+  ],
+  "test_sources": [
+    "tests/*.cs"
+  ]
+}

@@ -2,7 +2,7 @@ scene: prolog_graveyard
 priority: 10
 is_one_run: true
 ---
-background prolog/00025-165590409
+background town/cemetry_enter
 title "Глава 3. Кладбище святого Угробья"
 
 text "Могильные плиты тянулись вдаль, серые и мрачные. Старые дубы качали голыми ветвями. Где-то каркала ворона."
