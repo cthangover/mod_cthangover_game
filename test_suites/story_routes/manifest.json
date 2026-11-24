@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "depends": [
     "cthangover_murakami>=0.1.0",
+    "dialog_base>=0.1.0",
+    "ui_base>=0.1.0",
     "validator>=0.1.0"
   ],
   "test_sources": [
