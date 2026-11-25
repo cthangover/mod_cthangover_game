@@ -5,6 +5,7 @@ namespace Cthangover.Mods.Game.StoryRoutes
     using System.Text.Json;
     using System.Threading.Tasks;
     using Cthangover.Core.Games;
+    using Cthangover.Core.Factories.Impls;
     using Cthangover.Core.Mods;
     using Cthangover.Core.Mods.Testing;
     using Cthangover.Core.Scenes;
@@ -73,7 +74,9 @@ namespace Cthangover.Mods.Game.StoryRoutes
                 await WaitScene(tree, scenes, "forest", context);
                 await Choose(tree, 1, context);
                 await WaitScene(tree, scenes, "town_outskirts", context);
-                foreach (var scene in new[] { "home_livingroom", "prolog_graveyard", "prolog_villa" })
+                ModAssert.NotNull(BackgroundFactory.Instance.Get("town/town_outskirts"), "the outskirts has its own background");
+                GameData.Instance.Runtime.Time.SetTime(16 * 60);
+                foreach (var scene in new[] { "town_outskirts", "home_livingroom", "prolog_graveyard", "prolog_villa" })
                 {
                     SceneContextNode.FindNode<DialogBox>("DialogBox")?.Abort();
                     scenes.SwitchScene(scene);
